@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Work+Sans:wght@300;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+main{
+    width: 100%;
+    background: url('/img/bedge-grunge.png');
+    .menu-titulo{
+        padding: 50px 0;
+        background: white;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 10px double black;
+        border-top: 5px solid black;
+        h4{
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    }
+    .menu-content{
+        // background: green;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        .menu{
+            background: white;
+            width: 90%;
+            // height: 80%;
+            border: 10px double black;
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            p{
+                font-family: 'Playfair Display', serif;
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+
+
+
+            .menu-coffe{
+                width: 100%;
+                display: flex;
+                padding: 20px 0;
+                flex-wrap: wrap;
+                .coffe{
+                    // background: red;
+                    width: 50%;
+                    // height: 100%;
+                    .coffe-title{
+                        // background: green;
+                        display: flex;
+                        justify-content: center;
+                        padding: 20px 0;
+                    }
+                    .coffe-content{
+                        width: 100%;
+                        // background: red;
+                        padding: 0 30px;
+                        .content{
+                            border-bottom: 2px dotted  black;
+                            display: flex;
+                            justify-content: space-between;
+                            p{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+    }
+}
+.mapa{
+    // background: url('/img/bedge-grunge.png');
+    width: 100%;
+    height: 100%;
+    // padding: 0 10% 90px 0;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px double black;
+    .mapa-title{
+        background: white;
+        // padding: 20px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        margin: 50px 0;
+        border-bottom: 10px double black;
+        p{
+            font-size: 30px;
+        }
+    }
+    .mapa-google{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        iframe{
+            width: 100%;
+            // border: 2px solid black;
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: 30px;
+    .copy{
+        width: 100%;
+        height: 100%;
+        background: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:1000px) {
+    main{
+        .menu-titulo{
+            h4{
+            }
+        }
+        .menu-content{
+            .menu{
+                width: 80%;
+                padding: 30px 0;
+                flex-direction: column;
+                // flex-wrap: wrap;
+                overflow: auto;
+                gap: 20px;
+                .menu-coffe{
+                    padding: 0;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    .coffe{
+                        // background: red;
+                        width: 100%;
+                        // height: 100%;
+                        .coffe-title{
+                            
+                        }
+                        .coffe-content{
+                            .content{
+                                p{
+                                    font-size: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mapa{
+        .mapa-title{
+            p{
+                font-size: 20px;
+            }
+        }
+        .mapa-google{
+            iframe{
+                width: 80%;
+                max-height: 500px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    main{
+        .menu-titulo{
+            h4{
+            }
+        }
+        .menu-content{
+            .menu{
+                width: 100%;
+                p{
+                }
+                .menu-coffe{
+                    .coffe{
+                        .coffe-title{
+                            p{
+                                font-size: 25px;
+                            }
+                        }
+                        .coffe-content{
+                            .content{
+                                p{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    main{
+        .menu-titulo{
+            h4{
+            }
+        }
+        .menu-content{
+            .menu{
+                width: 100%;
+                p{
+                }
+                .menu-coffe{
+                    .coffe{
+                        .coffe-title{
+                            p{
+                                font-size: 25px;
+                            }
+                        }
+                        .coffe-content{
+                            .content{
+                                p{
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:325px) {
+    main{
+        .menu-titulo{
+            h4{
+            }
+        }
+        .menu-content{
+            .menu{
+                width: 100%;
+                p{
+                }
+                .menu-coffe{
+                    .coffe{
+                        .coffe-title{
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                        .coffe-content{
+                            .content{
+                                p{
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,42 @@
+
+.active{
+    // transition: .4s;
+    .navegador{
+        position: absolute;
+        height: 200vh;
+        z-index: 5;
+        .navegador-link{
+            height: calc(100vh + 100px);
+            transition: .4s;
+            background: white;
+            position: fixed;
+            gap: 15%;
+            .btn{
+                i{
+                    color: black;
+                }
+            }
+            a{
+                display: block;
+                font-size: 30px;
+                color: black;
+            }
+            flex-direction: column;
+            
+        }
+        .btn{
+            position: absolute;
+            top: 0;
+            height: 70px;
+        }
+    }
+    .logo{
+        padding-top: 87px;
+        .logo-parrafo{
+            padding-top: 18px;
+        }
+        .logo-anuncio{
+            padding-top: 65px;
+        }
+    }
+}
